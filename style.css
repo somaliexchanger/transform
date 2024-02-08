@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bungee+Spice&family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+/* .skewX10{
+    transform: matrix();
+    transform: matrix3d();
+    transform: rotate();
+    transform: rotate3d();
+    transform: scale();
+    transform: scale3d();
+    transform: scaleX();
+    transform: scaleY();
+    transform: scaleZ();
+    transform: skew();
+    transform: skewX();
+    transform: skewY();
+    transform: rotateZ('angle');
+    transform: rotateY('angle');
+    transform: rotateX('angle');
+    transform: translate();
+    transform: translate3d();
+    transform: translateX();
+    transform: translateY();
+    transform: translateZ();
+    transform: perspective();
+    transform: calc();
+    transform: var();
+   
+} */
+
+.transform{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Poppins';
+    font-weight: 800;
+}
+.b{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    color: antiquewhite;
+    text-align: center;
+}
+.c{
+    background: mediumorchid;
+}
+.a{
+    background: green;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+  text-transform: capitalize;
+   margin: 30px;
+   font-family: sans-serif;
+}
+/* .disktop-text{
+    visibility: visible;
+} */
+
+.matrix{
+    transition: transform 10s 2s ease-out;
+}
+/* The parameters are as follow:
+ matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+.matrix:hover{
+    transform: matrix(1,1,2,0,2,2);
+}
+
+
+/* translate explaining */
+.translate{
+    background: mediumblue;
+    color: aliceblue;
+    transition:    transform 15s 2s ease-out  ;
+
+}
+.translate:hover{
+    transform: translate(75px, 100px);
+}
+
+.translateX{
+    background: maroon;
+    transition:transform 10s 3s ease-in ;
+}
+.translateX:hover{
+    transform: translateX(80px);
+}
+.translateY{
+    background: sienna;
+   transition: transform 8s 2.3ms ease-in-out;
+}
+.translateY:hover{
+    transform: translateY(80px);
+}
+/* .translateZ{
+    background: chartreuse;
+    color: #000;
+    transition: transform 9s 1s ease-in;
+}
+.translateZ:hover{
+transform: translateZ(-900px);
+
+} */
+
+.rotate {
+    background: gold;
+    color: black;
+    transition:transform 9s 1s ease-in ;
+}
+.rotate:hover{
+    transform: rotate(65deg);
+}
+.scale{
+    background: salmon;
+    color: #00f;
+    transition: transform 7s 2s ease-out;
+}
+.scale:hover{
+    transform: scale(1,2);
+}
+
+.scaleX{
+    background: navy;
+    transition:   transform 6s 2s ease-in-out;
+}
+.scaleX:hover{
+    transform: scaleX(2);
+}
+.scaleY{
+    background: darkcyan;
+    transition: transform 5s 3s ease;
+ 
+}
+.scaleY:hover{
+transform: scaleY(2);
+}
+.skewX{
+    background: rebeccapurple;
+    transition: transform 10s 4s ease-out;
+}
+.skewX:hover{
+    transform:skewX(30deg) ;
+}
+
+.skewY{
+    background: magenta;
+   transition: transform 9s 3s ease;
+}
+.skewY:hover{
+    transform: skewY(40deg);
+}
+.skew{
+    background: darkgoldenrod;
+    transition: transform 10s ease-out;
+}
+.skew:hover{
+    transform: skew(20deg,10deg);
+}
+.rotateX{
+    background: red;
+    transition: transform 8s 1s ease-in;
+}
+.rotateX:hover{
+    transform: rotateX(60deg);
+}
+span{
+    color: fuchsia;
+}
+.mobile-text{
+    display: none;
+}
+.rotateY{
+    background: tomato;
+    /* transform: rotateY(30deg); */
+    transition: transform 10s 2s ease-in-out;
+}
+.rotateY:hover{
+    transform: rotateY(30deg);
+}
+
+/* =====media query-------- */
+@media (min-width: 412px) and (max-width:914px){
+    .transform{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-family: 'Poppins';
+        font-weight: 600;
+       
+    }
+    .b{
+        height: 300px;
+        width: 225px;
+        margin: 10px 0;
+        color: antiquewhite;
+        text-align: center;
+    }
+    .c{
+        background: mediumorchid;
+    }
+    .a{
+        background: green;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.4rem;
+      text-transform: capitalize;
+       margin: 30px;
+       font-family: sans-serif;
+    }
+
+
+    .matrix{
+        transition: transform 10s 2s ease-out;
+    }
+    /* The parameters are as follow:
+     matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+    .matrix:hover{
+        transform: matrix(1,1,2,0,2,2);
+    }
+    
+    
+    /* translate explaining */
+    .translate{
+        background: mediumblue;
+        color: aliceblue;
+        transition:    transform 15s 2s ease-out  ;
+    
+    }
+    .translate:hover{
+        transform: translate(75px, 100px);
+    }
+    
+    .translateX{
+        background: maroon;
+        transition:transform 10s 3s ease-in ;
+    }
+    .translateX:hover{
+        transform: translateX(80px);
+    }
+    .translateY{
+        background: sienna;
+       transition: transform 8s 2.3ms ease-in-out;
+    }
+    .translateY:hover{
+        transform: translateY(80px);
+    }
+    /* .translateZ{
+        background: chartreuse;
+        color: #000;
+        transition: transform 9s 1s ease-in;
+    }
+    .translateZ:hover{
+    transform: translateZ(-900px);
+    
+    } */
+    
+    .rotate {
+        background: gold;
+        color: black;
+        transition:transform 9s 1s ease-in ;
+    }
+    .rotate:hover{
+        transform: rotate(65deg);
+    }
+    .scale{
+        background: salmon;
+        color: #00f;
+        transition: transform 7s 2s ease-out;
+    }
+    .scale:hover{
+        transform: scale(1,2);
+    }
+    
+    .scaleX{
+        background: navy;
+        transition:   transform 6s 2s ease-in-out;
+    }
+    .scaleX:hover{
+        transform: scaleX(2);
+    }
+    .scaleY{
+        background: darkcyan;
+        transition: transform 5s 3s ease;
+     
+    }
+    .scaleY:hover{
+    transform: scaleY(2);
+    }
+    .skewX{
+        background: rebeccapurple;
+        transition: transform 10s 4s ease-out;
+    }
+    .skewX:hover{
+        transform:skewX(30deg) ;
+    }
+    
+    .skewY{
+        background: magenta;
+       transition: transform 9s 3s ease;
+    }
+    .skewY:hover{
+        transform: skewY(40deg);
+    }
+    .skew{
+        background: darkgoldenrod;
+        transition: transform 10s ease-out;
+    }
+    .skew:hover{
+        transform: skew(20deg,10deg);
+    }
+    .rotateX{
+        background: red;
+        transition: transform 8s 1s ease-in;
+    }
+    .rotateX:hover{
+        transform: rotateX(60deg);
+    }
+    .rotateY{
+        background: tomato;
+        /* transform: rotateY(30deg); */
+        transition: transform 10s 2s ease-in-out;
+    }
+    .rotateY:hover{
+        transform: rotateY(30deg);
+    }
+    
+    .mobile-text{
+       display: block;
+      text-align: left;
+    }
+    .mobile-text h1{
+        background: #00f;
+        color: aliceblue;
+        font-size: 2rem;
+        border-style: groove;
+        border-width: 10px;
+        border-color: #ff0;
+    }
+    .disktop-text{
+     display: none;
+    }
+    
+}
